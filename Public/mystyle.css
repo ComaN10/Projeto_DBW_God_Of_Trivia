@@ -1,0 +1,668 @@
+.navbar{
+  height:168 px;
+  background: #453E3E;  
+}
+.logo{
+   position: absolute;
+   width: 45px;
+   height: 70px;
+   left: 50%;
+   cursor: pointer;
+}
+.navbar>a{
+   text-decoration: none !important;
+   float:left;
+   text-align: center;
+   width: 141px;
+   height: 39px;
+   left: 1700px;
+   top: 5px;
+   font-family: 'Dangrek';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 39px;  
+   color: white;
+}
+p{
+   color: white;
+}
+.SignLink{
+   width: 92px;
+   height: 35px;
+   font-family: 'Dangrek';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+   float: left;
+   color: #00FCED;
+}
+.navbar > a:hover{
+   color: red
+}
+.footer{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 77px;
+   left: 0px;
+   background: rgba(0, 0, 0, 0.5);
+}
+body{
+   background-image: url("/images/BackGround.jpg");
+}
+/*LOGIN BOX*/
+.LoginText{
+   color:#fff;	
+   text-transform:uppercase;
+     font-size: 23px;
+     margin: -50px 0 80px 0;
+     display: block;
+     text-align: center;
+     font-family: 'Dangrek';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 50px;
+ }
+.SignIn{
+   margin-top:-50px !important;
+   left: 837px;
+   font-family: 'Dangrek';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #FFFFFF;
+}
+
+.login-box{
+   position: fixed;
+   left:50%;
+   top:50%;
+   background: rgba(6, 0, 0, 0.6);
+   border: 1px solid #000000;
+   border-radius:3px;
+   box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+   transform: translate(-50%,-50%);
+   padding:70px 70px;
+ }
+.SignLink{
+   text-decoration: none !important;
+   position: absolute;
+   font-family: 'Dangrek';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   color: #00FCED;
+
+   }
+.SignLink:hover{
+   text-decoration: none !important;
+   color: #00fceb7e;
+   }
+ .input-container{
+   position:relative;
+   margin-bottom:25px;
+ }
+ .input-container label{
+   position:absolute;
+   top:0px;
+   left:0px;
+   font-size:16px;
+   color:#fff;	
+   transition: all 0.5s ease-in-out;
+ }
+ .input-container input{ 
+   border:0;
+   border-bottom:1px solid #555;  
+   background:transparent;
+   width:100%;
+   padding:8px 0 5px 0;
+   font-size:16px;
+   color:#fff;
+ }
+ .input-container input:focus{ 
+  border:none;	
+  outline:none;
+  border-bottom:1px solid #e74c3c;	
+ }
+ .btn{
+   color:#fff;
+   background-color:#e74c3c;
+   outline: none;
+   border: 0;
+   color: #fff;
+   padding:10px 20px;
+   text-transform:uppercase;
+   margin-top:50px;
+   left: 25%;
+   border-radius: 50%;
+   cursor:pointer;
+   position:relative;
+
+ }
+ 
+ .input-container input:focus ~ label,
+ .input-container input:valid ~ label{
+   top:-12px;
+   font-size:12px;
+   
+ }
+ /*SignIn*/
+ .CreateAcc{
+   color:#fff;	
+     font-size: 23px;
+     margin: -50px 0 80px 0;
+     display: block;
+     text-align: center;
+     font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 40px;
+ }
+ .btnSign{
+   color:#fff;
+   background-color:#e74c3c;
+   outline: none;
+   border: 0;
+   color: #fff;
+   padding:10px 20px;
+   text-transform:uppercase;
+   margin-top:50px;
+   left: 30% !important;
+   border-radius: 50%;
+   cursor:pointer;
+   position:relative;
+ }
+ .socials{
+   position: relative;
+   left: 47% !important;
+   padding-top: 10px;
+   cursor: pointer;
+ }
+ .socials:hover{
+   opacity: 70%;
+ }
+ .BackBtn{
+   cursor: pointer;
+ }
+ .BackBtn:hover{
+  opacity: 70%;
+}
+ /*********************Menu principal****************************/
+.Start{
+ color:#fff;
+ background-color:#e74c3c;
+ outline: none;
+ border: 0;
+ color: #fff;
+ padding:10px 20px;
+ text-transform:uppercase;
+ font-family: 'Lemonada';
+ font-style: normal;
+ font-weight: 380;
+ font-size: 40px;
+ line-height: 32px;
+ margin-top:20%;
+ left: 42%;
+ border-radius: 50%;
+ cursor:pointer;
+ position:relative;
+ box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+ width: 416px;
+ height: 132px;
+}
+.Start:hover{
+  opacity: 70%;
+ }
+.LeaderBoard{
+ color:#fff;
+ background-color:#e74c3c;
+ outline: none;
+ border: 0;
+ color: #fff;
+ padding:10px 20px;
+ text-transform:uppercase;
+ font-family: 'Lemonada';
+ font-style: normal;
+ font-weight: 320;
+ font-size: 28px;
+ line-height: 22px;
+ margin-top:2%;
+ left: 44%;
+ border-radius: 50%;
+ cursor:pointer;
+ position:relative;
+ box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+ width: 316px;
+ height: 112px;
+}
+.LeaderBoard:hover{
+  opacity: 70%;
+ }
+.Rules{
+ color:#fff;
+ background-color:#e74c3c;
+ outline: none;
+ border: 0;
+ color: #fff;
+ padding:10px 20px;
+ text-transform:uppercase;
+ font-family: 'Lemonada';
+ font-style: normal;
+ font-weight: 320;
+ font-size: 20px;
+ line-height: 12px;
+ margin-top: 2%;
+ left: 47%;
+ border-radius: 50%;
+ cursor:pointer;
+ position:relative;
+ box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+ width: 216px;
+ height: 92px;
+}
+.Rules:hover{
+  opacity: 70%;
+ }
+.title{
+ position: absolute;
+ left: 35%;
+ top: 190px;
+}
+.LogoStart{ 
+ width: 125px;
+ height: 198px;
+}
+.titulo{
+ width: 552px;
+ height: 135px;
+ font-family: 'Dangrek';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 80px;
+ line-height: 145px;
+}
+/*********************Pagina Jogo****************************/
+.navJogo{
+   height:168 px;
+   background: #453E3E;
+   display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding:0 2rem;
+}
+.navJogoText{
+ font-family: 'Inter';
+ font-style: normal;
+   font-weight: 400;
+   font-size: 70px;
+   line-height: 85px;
+   color: #FFFFFF;
+}
+
+.textnav{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 48px;
+
+   color: #000000;
+}
+
+
+
+.pergunta{
+   margin-top: 2rem;
+   margin-bottom: 4rem;
+  /* margin-left: 2rem;
+   margin-right: 2rem;*/
+   background-color: #D9D9D9;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 96px;
+   line-height: 116px;
+   text-align: center;
+   color: #000000;
+}
+
+.resposta{
+   width: calc(100% - 12rem);
+   background: #FFFFFF;
+   margin-left: 6rem;
+   margin-bottom: 2rem;
+   padding-left: 1rem;
+   border: 0;
+
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 70px;
+   line-height: 85px;
+   text-align: left;
+   color: #000000;
+}
+
+.textoPaginaJogo{
+   align-items: center;
+   margin-top: 8rem;
+
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 128px;
+   line-height: 155px;
+   text-align: center;
+
+   color: #000000;
+}
+/*********************Pagina JogoWait e decisoes****************************/
+.botaoMenu{
+   width: 516px;
+   height: 142px;
+   color:#fff;
+   background-color:#e74c3c;
+   outline: none;
+   border: 0;
+   color: #fff;
+   padding:10px 20px;
+   text-transform:uppercase;
+   font-family: 'Lemonada';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 40px;
+   line-height: 32px;
+   margin-top:10rem;
+   left: 38%;
+   border-radius: 50%;
+   cursor:pointer;
+   position:relative;
+   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+}
+.botaoMenu:hover{
+  opacity: 70%;
+ }
+.rTitulo{
+
+   margin-left: 6rem;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 75px;
+   line-height: 121px;
+
+   color: #000000;
+}
+.subRTitulo{
+   margin-left: 6rem;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 61px;
+
+   color: #000000;
+}
+.respostaReduzida{
+   width: calc(100% - 12rem);
+   background: #FFFFFF;
+   margin-left: 6rem;
+   margin-bottom: 3rem;
+   padding-left: 1rem;
+
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 48px;
+
+   color: #000000;
+}
+.rSubRTitulo{
+   margin-left: 6rem;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 48px;
+
+   color: #000000;
+}
+.botaoContinuar{
+   width: 290px;
+   height: 96px;
+
+   color:#fff;
+   background-color:#e74c3c;
+   outline: none;
+   border: 0;
+   color: #fff;
+   padding:10px 20px;
+   text-transform:uppercase;
+   font-family: 'Lemonada';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 40px;
+   line-height: 32px;
+   margin-top:2rem;
+   left: 38%;
+   border-radius: 50%;
+   cursor:pointer;
+   position:relative;
+   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+}
+/*Profile CSS*/
+.logoP{
+ position: absolute;
+ width: 45px;
+ height: 70px;
+ left: 1800px;
+ cursor: pointer;
+}
+.TextP{
+ position: absolute;
+ width: 232px;
+ height: 40px;
+ left: 844px;
+ top: 5px;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 60px;
+ line-height: 75px;
+ color: #FFFFFF;
+ 
+}
+.ProfPic{
+ position: absolute;
+width: 150px;
+border-radius: 20%;
+height: 150px;
+left: 600px;
+top: 141px;
+}
+.info{
+ position: absolute;
+width: 900px;
+height: 210px;
+left: 800px;
+top: 132px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 380;
+font-size: 35px;
+line-height: 100px;
+
+color: #000000;
+}
+.stats{
+ position: absolute;
+ width: 600px;
+ height: 63px;
+ left: 710px;
+ top: 400px;
+}
+.stats>a{
+ padding-left: 10%;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 60px;
+ line-height: 32px;
+}
+.btnProf{
+ color:#fff;
+ background-color:#e74c3c;
+ outline: none;
+ border: 0;
+ color: #fff;
+ padding:10px 20px;
+ text-transform:uppercase;
+ font-family: 'Lemonada';
+ font-style: normal;
+ font-weight: 380;
+ font-size: 20px;
+ line-height: 32px;
+ top: 180px;
+ border-radius: 50%;
+ cursor:pointer;
+ position:absolute;
+ box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+ width: 316px;
+ height:52px;
+}
+
+
+.btnProf:hover{
+ opacity: 70%;
+}
+
+.profilPic{
+   cursor:pointer;
+}
+.profilPic:hover{
+   opacity: 70%;
+}
+
+/*---------About US---------------*/
+ h1 {
+   text-align: center;
+   font-family: Tahoma, Arial, sans-serif;
+   color: #06D85F;
+   margin: 80px 0;
+ }
+ 
+ .box {
+   width: 40%;
+   margin: 0 auto;
+   background: rgba(239, 173, 173, 1);
+   padding: 35px;
+   border: 2px solid #fff;
+   border-radius: 20px/50px;
+   background-clip: padding-box;
+   text-align: center;
+ }
+ 
+ .button {
+   font-size: 1em;
+   padding: 10px;
+   color: #fff;
+   border: 2px solid rgba(239, 173, 173, 1);
+   border-radius: 20px/50px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+ }
+ .button:hover {
+   background:rgba(239, 173, 173, 1);
+ }
+ 
+ .overlay {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.7);
+   transition: opacity 500ms;
+   visibility: hidden;
+   opacity: 0;
+ }
+ .overlay:target {
+   visibility: visible;
+   opacity: 1;
+ }
+ 
+ .popup {
+   margin: 70px auto;
+   padding: 20px;
+   background: #fff;
+   border-radius: 5px;
+   width: 30%;
+   position: relative;
+   transition: all 5s ease-in-out;
+ }
+ 
+ .popup h2 {
+   margin-top: 0;
+   color: #333;
+   font-family: Tahoma, Arial, sans-serif;
+ }
+ .popup .close {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   transition: all 200ms;
+   font-size: 30px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #333;
+ }
+ .popup .close:hover {
+   color: #06D85F;
+ }
+ .popup .content {
+   max-height: 30%;
+   overflow: auto;
+ }
+ 
+ @media screen and (max-width: 700px){
+   .box{
+     width: 70%;
+   }
+   .popup{
+     width: 70%;
+   }
+ }
+
+ .botaoMenuGame{
+  width: 516px;
+  height: 142px;
+  color:#fff;
+  background-color:#e74c3c;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding:10px 20px;
+  text-transform:uppercase;
+  font-family: 'Lemonada';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 32px;
+  margin-top:10rem;
+  left: 38%;
+  border-radius: 50%;
+  cursor:pointer;
+  position:relative;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+ }

@@ -1,0 +1,48 @@
+<%- include('../views/Partials/head'); %>
+<body>
+  <header>
+    <nav class="navbar">
+      <img class="BackBtn"src="/images/backArrow.png" onclick="window.location.href='/login'";>
+      <img class="logo" src="/images/Logo.png"/>
+      <a href="#popup1" >About us</a>
+    </nav>
+    <%- include('../views/Partials/popUp'); %>
+  </header>
+    <div class="login-box">
+      <form action="/registar" method="POST">
+        <p class="CreateAcc">Create an Account</p>
+        <div class="input-container">
+          <input type="mail" required="" id="" name="email"/>
+          <label>Email</label>		
+      </div>
+      <div class="input-container">
+        <input type="text" required id="" name="username"/>
+        <label>Username</label>		
+    </div>  
+      <div class="input-container">		
+          <input type="password" required id="" name="password"/>
+          <label>Password</label>
+      </div>
+      <div class="input-container">		
+        <input type="password" required id="ConfPass"/>
+        <label>Confirm Password</label>
+    </div>
+      <button type="submit" class="btnSign" name="btnLog" id="btnLog">Sign In</button>
+      <br />
+        <br />
+        <p>Já tem conta? Então faça <a href="/login">Login</a></p>
+      </form>
+    </div>
+    <%- include('../views/Partials/footer'); %>
+    <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

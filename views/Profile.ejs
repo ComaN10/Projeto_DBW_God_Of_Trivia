@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../" />
+    <link rel="stylesheet" href="../mystyle.css" />
+    <title>God of Trivia</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <img class="BackBtn" src="../images/backArrow.png" onclick="window.location.href='/startLog'";/>
+        <p class="TextP">Profile</p>
+        <img class="logoP" src="../images/Logo.png"/>
+   </nav>
+  </header>
+
+    <img class="ProfPic"src="<%=userd.imagem%>">
+    <div class="info">
+        <a>Username:<%=userd.username%></a><br>
+        <a>Email: <%=userd.email%></a><br>
+        <button class="btnProf" onclick="window.location.href='#popup3';">Change Profile Pic</button><br> 
+        <%- include('../views/Partials/popUpImg'); %>
+    </div>
+    <div class="stats">
+        <img src="../images/firstPlace.png"><a><%=userd.nvenceu%></a><br><br>
+    </div>
+  <div class="footer">
+    <footer>
+      <img class="socials" src="../images/Instagram.png" onclick="window.location.href='https://www.instagram.com';">
+      <img class="socials" src="../images/twitter.png" onclick="window.location.href='https://www.twitter.com/';">
+      <img class="socials" src="../images/facebook.png" onclick="window.location.href='https://www.facebook.com/';">
+    </footer>
+  </div>
+</body>
+</html>

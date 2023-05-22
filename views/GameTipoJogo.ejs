@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../views/partials/head'); %>
+<body>
+  <header>
+    <nav class="navbar">
+        <img class="BackBtn" src="../images/backArrow.png" onclick="window.location.href='/start'";/>
+        <p class="TextP">Jogos</p>
+        <img class="logoP" src="../images/Logo.png"/>
+   </nav>
+  </header>
+  <form action="/GameTipoJogo" method ="post">
+    <button type="action" class="botaoMenu" name="escolhePlayer4" value="true">4 Jogadores</button>
+  </form>
+  <%- include('../views/partials/footer'); %>
+</body>
+</html>

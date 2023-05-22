@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../views/partials/head'); %>
+<head></head><meta http-equiv="Refresh" content="2; url=/GameAnswer" /></html><head>
+<body>
+    <header>
+        <div class="navJogo navJogoText">
+          <p id="headScore">Score:<%= dadosGame.score %></p>
+          <p id="perguntaNr">Pergunta <%= dadosGame.nrPergunta %></p>
+          <p id="tempoPergunta">Time:<%= dadosGame.segundosResposta %>S</p>
+          <p hidden id="estadopP1" value="<%= dadosGame.estadoAvancar %>"></p>
+        </div>
+      </header>
+
+  <div class="textoPaginaJogo">Waiting for Opponents to answer!</div>
+<!--<a href="/GameAnswer">cont prov.</a>-->
+<%- include('../views/partials/footer'); %> 
+<script>
+    
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+    window.history.go(1);
+    };
+
+    var p1 = document.getElementById("estadopP1").getAttribute("value");
+    if(p1 == "true"){
+        var meta = document.createElement('meta');
+        meta.httpEquiv = "refresh" 
+        meta.content = "0;URL=/GameAnswer";
+        document.getElementsByTagName('head')[0].appendChild(meta);
+    }
+    else{
+        var meta = document.createElement('meta');
+        meta.httpEquiv = "refresh" 
+        meta.content = "2;URL=/GameWait";
+        document.getElementsByTagName('head')[0].appendChild(meta);
+    }
+</script>
+</body>
+</html>

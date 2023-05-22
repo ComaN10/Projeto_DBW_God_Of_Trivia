@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../views/partials/head'); %>
+<body>
+  <header>
+    <div class="navJogo navJogoText">
+        <p id="headScore">Score:<%= dadosId.score %></p>
+        <p id="perguntaNr">Results</p>
+        <p id="tempoPergunta">Time:<%= dadosId.segundosResposta %>S</p>
+      </div>
+  </header>
+  <div class="textoPaginaJogo"><%= dadosId.resultado %></div>
+  <form action="/startLog" method ="get">
+    <button class="botaoMenu">Menu</button>
+  </form>
+
+  <%- include('../views/partials/footer'); %>
+</body>
+</html>

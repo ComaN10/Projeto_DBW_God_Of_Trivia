@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../views/partials/head'); %>
+<body>
+  
+  <header>
+    <div class="navJogo navJogoText">
+      <p id="headScore">Score:<%= dadosId.score %></p>
+      <p id="perguntaNr">Pergunta <%= dadosId.nrPergunta %></p>
+      <p id="tempoPergunta">Time:<%= dadosId.segundosResposta %>S</p>
+    </div>
+  </header>
+
+  <div class="rTitulo">RightAnswer</div>
+  <div class="resposta"><%= dadosId.respCerta %></div>
+
+  <% dadosGame.forEach(function(dadosGame){ %>
+  <div class="subRTitulo">Players Answers</div>
+  <div class="rSubRTitulo"><%= dadosGame.namePlayer %> took <%= dadosGame.segundosResposta %> seconds, has <%= dadosGame.score %> points and chose:</div>
+  <div class="respostaReduzida"><%= dadosGame.respEscolhida %></div>
+  <% }); %>
+  <div class="subRTitulo">The fastest and correct:<i class="textnav"> <%= dadosId.fastPlayer %></i></div>
+  
+  <% if(dadosId.nrPergunta < 20){ %>
+  <form action="/Game" method ="get">
+    <button class="botaoContinuar">Continuar</button>
+  </form>
+  <% }else{ %>
+    <form action="/GameResult" method ="get">
+      <button class="botaoContinuar">Continuar</button>
+    </form>
+  <% } %>
+
+  <%- include('../views/partials/footer'); %>
+  <script>
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+    window.history.go(1);
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<%- include('../views/partials/head'); %>
+<body class="jogo">
+    <header>
+    <div class="navJogo navJogoText">
+        <p></p>
+        <p>God Of Trívia</p>
+        <p></p>
+    </div>
+    </header>
+  <div class="textoPaginaJogo" id="status"></div>
+  <form action="/startLog?username=<%= playerName %>" method ="get">
+    <button type="action" class="botaoMenu" style="display: none;" id="status1">Menu</button>
+  </form>
+  <form action="/start" method ="get">
+    <button type="action" class="botaoMenu"  id="status2">Menu</button>
+  </form>
+
+  <div  class="questionForm" id="questionForm">
+    <h2 id="question" class="pergunta"></h2>
+    <div id="options"></div>
+  </div>
+  <div id="result" style="display: none;" value="true">
+    <div id="resultContainer"></div>
+    <a class="botaoMenu" id="bPlayAgain" href="/Game?username=<%= playerName %>">Play Again</a>
+    <a class="botaoMenu" href="/startLog?username=<%= playerName %>">Menu</a>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/JS/client.js"></script>
+  <%- include('../views/partials/footer'); %>
+</body>
+</html>
